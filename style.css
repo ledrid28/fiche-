@@ -145,6 +145,7 @@ header {
 }
 
 .btn {
+    margin-left: auto;
     padding: 5px 12px;
     background-color: #2575fc;
     color: white;
@@ -191,3 +192,4 @@ header {
     margin: 2px 0 0 0;
     font-size: 0.85em;
     font-style: italic;}
+
