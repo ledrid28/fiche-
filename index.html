@@ -1,42 +1,48 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiche personnelle - Projets</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portfolio d'Idir Adel - Projets en IA, Deep Learning et développement web">
+    <meta name="author" content="Idir Adel">
+    <title>Idir Adel - Portfolio Projets</title>
+    <link rel="stylesheet" href="style (1).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
 <header>
     <div class="header-left">
         <div class="profile-name">
-            <h2>Idir Adel</h2>
-            <a href="https://www.linkedin.com/in/adel-idir-b674a7358" target="_blank" class="linkedin-btn">
-  <i class="fab fa-linkedin"></i> Mon LinkedIn
-</a>
-
-            <p>Passionné par l'IA et le développement de solutions innovantes</p>
+            <h1>Idir Adel</h1>
+            <p class="tagline">Passionné par l'IA et le développement de solutions innovantes</p>
+            <a href="https://www.linkedin.com/in/adel-idir-b674a7358" target="_blank" class="linkedin-btn" aria-label="Voir mon profil LinkedIn">
+                <i class="fab fa-linkedin"></i> Mon LinkedIn
+            </a>
         </div>
-        <h1>Mes Projets & Compétences</h1>
+        <h2 class="section-title">Mes Projets & Compétences</h2>
     </div>
     <div class="profile-right">
-        <img src="profil.JPG" alt="Photo de profil" class="profile-img">
+        <img src="profil.JPG" alt="Photo de profil d'Idir Adel" class="profile-img">
     </div>
 </header>
 
-
-<div class="container">
+<main class="container">
 
     <!-- Projet 1 -->
-    <div class="project-card">
-        <img src="cancer.jpg" alt="Détection cancer mammaire" class="project-image">
+    <article class="project-card">
+        <div class="image-wrapper">
+            <img src="cancer.jpg" alt="Illustration du projet de détection du cancer mammaire" class="project-image">
+            <div class="image-overlay">
+                <span class="category-tag">Machine Learning</span>
+            </div>
+        </div>
         <div class="project-content">
-            <h3>Détection cancer mammaire</h3>
-            <p>Classification via Deep Learning et Machine Learning. Analyse des données médicales.</p>
+            <h3>Détection du cancer mammaire</h3>
+            <p>Classification avancée via Deep Learning et Machine Learning pour l'analyse de données médicales et la détection précoce du cancer du sein.</p>
             
             <div class="skills">
-                <span class="skill">Python</span>
+                <span class="skill"><i class="fab fa-python"></i> Python</span>
                 <span class="skill">PyTorch</span>
                 <span class="skill">TensorFlow</span>
                 <span class="skill">Scikit-learn</span>
@@ -45,43 +51,56 @@
             </div>
 
             <div class="file-list">
-                <div><span>Github</span> <a class="btn" href="https://github.com/ledrid28/BCDdetectionclass" download>Voir</a></div>
+                <a class="btn btn-primary" href="https://github.com/ledrid28/BCDdetectionclass" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> Voir sur GitHub
+                </a>
             </div>
         </div>
-    </div>
+    </article>
 
     <!-- Projet 2 -->
-    <div class="project-card">
-        <img src="webag.jpg" alt="Site web dynamique agence de voyage" class="project-image">
+    <article class="project-card">
+        <div class="image-wrapper">
+            <img src="webag.jpg" alt="Capture d'écran du site web d'agence de voyage" class="project-image">
+            <div class="image-overlay">
+                <span class="category-tag">Développement Web</span>
+            </div>
+        </div>
         <div class="project-content">
             <h3>Site web dynamique - Agence de voyage</h3>
-            <p>Développement d’un site interactif avec gestion des réservations et affichage dynamique.</p>
+            <p>Développement d'un site interactif full-stack avec système de gestion des réservations, affichage dynamique et interface utilisateur moderne.</p>
 
             <div class="skills">
-                <span class="skill">HTML5</span>
-                <span class="skill">CSS3</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">PHP</span>
+                <span class="skill"><i class="fab fa-html5"></i> HTML5</span>
+                <span class="skill"><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span class="skill"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="skill"><i class="fab fa-php"></i> PHP</span>
                 <span class="skill">MySQL</span>
                 <span class="skill">jQuery</span>
             </div>
 
             <div class="file-list">
-                <div><span>Github</span> <a class="btn" href="projets/web_agency/index.html" download>Voir</a></div>
-                
+                <a class="btn btn-primary" href="projets/web_agency/index.html" target="_blank">
+                    <i class="fas fa-eye"></i> Voir le projet
+                </a>
             </div>
         </div>
-    </div>
+    </article>
 
     <!-- Projet 3 -->
-    <div class="project-card">
-        <img src="detecter.png" alt="Car Counter Speed Yolov8" class="project-image">
+    <article class="project-card">
+        <div class="image-wrapper">
+            <img src="detecter.png" alt="Interface de détection et comptage de véhicules" class="project-image">
+            <div class="image-overlay">
+                <span class="category-tag">Computer Vision</span>
+            </div>
+        </div>
         <div class="project-content">
             <h3>Car Counter & Speed - YOLOv8</h3>
-            <p>Système de détection et comptage de véhicules en temps réel avec calcul de vitesse.</p>
+            <p>Système intelligent de détection et comptage de véhicules en temps réel avec calcul automatique de vitesse utilisant YOLOv8 et tracking avancé.</p>
 
             <div class="skills">
-                <span class="skill">Python</span>
+                <span class="skill"><i class="fab fa-python"></i> Python</span>
                 <span class="skill">YOLOv8</span>
                 <span class="skill">OpenCV</span>
                 <span class="skill">NumPy</span>
@@ -89,13 +108,23 @@
             </div>
 
             <div class="file-list">
-                <div><span>Github</span> <a class="btn" href="https://github.com/ledrid28/CardetectionspeedTrack" download>Voir</a></div>
-                
+                <a class="btn btn-primary" href="https://github.com/ledrid28/CardetectionspeedTrack" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> Voir sur GitHub
+                </a>
             </div>
         </div>
-    </div>
+    </article>
 
-</div>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2025 Idir Adel - Tous droits réservés</p>
+    <div class="footer-links">
+        <a href="mailto:contact@example.com" aria-label="Me contacter par email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/ledrid28" target="_blank" rel="noopener noreferrer" aria-label="Mon profil GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/adel-idir-b674a7358" target="_blank" rel="noopener noreferrer" aria-label="Mon profil LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
 
 </body>
 </html>
