@@ -1,3 +1,4 @@
+/* ==================== VARIABLES CSS ==================== */
 :root {
     --primary-color: #2575fc;
     --secondary-color: #6a11cb;
@@ -435,6 +436,5 @@ button:focus-visible {
         break-inside: avoid;
     }
 }
-
 
 
